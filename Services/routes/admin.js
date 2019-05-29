@@ -6,7 +6,7 @@ class AdminRouter {
   @Get('/login')
   adminLogin(ctx, next) {
     try {
-      throw new Error('服务出错了！')
+      // throw new Error('服务出错了！')
       // ctx.body = { a: 1, b: 2 }
     } catch (e) {
       throw e
