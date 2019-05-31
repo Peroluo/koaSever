@@ -1,0 +1,2 @@
+[2019-05-31T14:36:29.030] [ERROR] koaseverlog - POST==>/admin/login?==>request==>{"a":"323","dd":"23"}==>response==>服务出错了！==>3ms
+[2019-05-31T14:36:36.281] [ERROR] koaseverlog - GET==>/admin/login?&a=323&dd=23==>request==>{"a":"323","dd":"23"}==>response==>"Method Not Allowed"==>1ms

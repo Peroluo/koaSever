@@ -1,46 +1,36 @@
 import { Route } from '../decorator/router'
 import { resolve } from 'path'
 import bodyParser from 'koa-bodyparser'
-import logger from '../utils/log'
-
+import Log from '../utils/log'
+import Help from '../utils/help'
 export const addBodyParser = app => {
   app.use(bodyParser())
 }
-// log一定要放到router前面
 export const log = app => {
   app.use(async (ctx, next) => {
     const startTime = new Date().getTime()
+    const reqMethod = ctx.method
+    const reqUrl = ctx.request.url
+    const parmas =
+      reqMethod === 'GET'
+        ? JSON.stringify(new Help().getRequestParmas(reqUrl))
+        : JSON.stringify(ctx.request.body)
     try {
       await next()
       const endTime = new Date().getTime()
-      if (ctx.response.status === 200) {
-        if (ctx.method === 'GET') {
-          const info = `${ctx.method} ==> ${
-            ctx.url
-          } ==> 返回数据: ${JSON.stringify(ctx.body)} ==> 耗时：${Math.round(
-            endTime - startTime
-          ) + 'ms'}`
-          logger.info(info)
-        }
-        if (ctx.method === 'POST') {
-          const info = `${ctx.method} ==> ${
-            ctx.url
-          } ==> 请求参数:  ${JSON.stringify(
-            ctx.request.body
-          )} ==> 返回数据: ${JSON.stringify(ctx.body)} ==> 耗时：${Math.round(
-            endTime - startTime
-          ) + 'ms'}`
-          logger.info(info)
-        }
-      } else {
-        const error = `${ctx.method} ==> ${ctx.url} ==> 错误信息:${
-          ctx.response.message
-        }`
-        logger.error(error)
-      }
+      const reqTime = endTime - startTime + 'ms'
+      const {
+        response: { status, message }
+      } = ctx
+      const resBody = JSON.stringify(status === 200 ? ctx.body : message)
+      const info = `${reqMethod}==>${reqUrl}==>request==>${parmas}==>response==>${resBody}==>${reqTime}`
+      status === 200 ? Log.info(info) : Log.error(info)
     } catch (e) {
-      const error = `${ctx.method} ==> ${ctx.url} ==> 错误信息:${e.message}`
-      logger.error(error)
+      const endTime = new Date().getTime()
+      const reqTime = endTime - startTime + 'ms'
+      const resBody = e.message
+      const error = `${reqMethod}==>${reqUrl}==>request==>${parmas}==>response==>${resBody}==>${reqTime}`
+      Log.error(error)
       ctx.body = e.message
     }
   })
