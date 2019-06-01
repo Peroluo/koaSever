@@ -1,16 +1,10 @@
-import { Controller, Post, Auth, Get, Log, Required } from '../decorator/router'
-import { throws } from 'assert'
-
+import { Controller, Post, Auth, Get, Required } from '../decorator'
 @Controller
 export default class Admin {
   @Get
-  @Auth
-  login(ctx, next) {
-    try {
-      throw new Error('服务出错了！')
-      // ctx.body = { a: 1, b: 2 }
-    } catch (e) {
-      throw e
-    }
+  @Required(['name', 'password'])
+  login(ctx) {
+    // throw new Error('服务出错了！')
+    ctx.body = { a: 1, b: 2 }
   }
 }

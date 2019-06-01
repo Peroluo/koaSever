@@ -37,3 +37,39 @@
 [2019-06-01T12:21:45.619] [ERROR] SERVICELOG - GET==>/minad/login==>request==>{}==>response==>"Not Found"==>0ms
 [2019-06-01T12:21:48.343] [ERROR] SERVICELOG - GET==>/admin/login==>request==>{}==>response==>Cannot read property 'user' of undefined==>0ms
 [2019-06-01T14:06:40.030] [ERROR] SERVICELOG - GET==>/admin/login==>request==>{}==>response==>Cannot read property 'user' of undefined==>10ms
+[2019-06-01T15:19:49.561] [ERROR] SERVICELOG - GET==>/test/login?name=2&password=3==>request==>{"name":"2","password":"3"}==>response==>"Method Not Allowed"==>1ms
+[2019-06-01T15:27:53.809] [ERROR] SERVICELOG - GET==>/admin/login?&name=ss==>request==>{"name":"ss"}==>response==>Cannot read property 'user' of undefined==>2ms
+[2019-06-01T15:28:09.144] [ERROR] SERVICELOG - GET==>/admin/login?&name=ss==>request==>{"name":"ss"}==>response==>服务出错了！==>1ms
+[2019-06-01T15:31:31.285] [ERROR] SERVICELOG - GET==>/admin/login?password%20=sss&name=ss&password=sss==>request==>{"password%20":"sss","name":"ss","password":"sss"}==>response==>value is not defined==>11ms
+[2019-06-01T15:31:38.739] [ERROR] SERVICELOG - GET==>/admin/login?&name=ss&password=sss==>request==>{"name":"ss","password":"sss"}==>response==>value is not defined==>2ms
+[2019-06-01T15:32:47.221] [ERROR] SERVICELOG - GET==>/admin/login?&name=ss&password=sss==>request==>{"name":"ss","password":"sss"}==>response==>key is not defined==>1ms
+[2019-06-01T15:33:57.021] [ERROR] SERVICELOG - GET==>/admin/login?&name=ss&password=sss==>request==>{"name":"ss","password":"sss"}==>response==>paramsObj is not defined==>6ms
+[2019-06-01T15:34:42.574] [ERROR] SERVICELOG - GET==>/admin/login?&name=ss&password=sss==>request==>{"name":"ss","password":"sss"}==>response==>Cannot convert undefined or null to object==>3ms
+[2019-06-01T15:39:12.062] [ERROR] SERVICELOG - GET==>/admin/login?&name=2&password%20=232==>request==>{"name":"2","password%20":"232"}==>response==>Cannot read property 'concat' of undefined==>3ms
+[2019-06-01T15:41:11.741] [ERROR] SERVICELOG - GET==>/admin/login?&name=2&password%20=232==>request==>{"name":"2","password%20":"232"}==>response==>Cannot read property 'concat' of undefined==>2ms
+[2019-06-01T15:41:12.930] [ERROR] SERVICELOG - GET==>/admin/login?&name=2&password%20=232==>request==>{"name":"2","password%20":"232"}==>response==>Cannot read property 'concat' of undefined==>1ms
+[2019-06-01T15:44:48.650] [ERROR] SERVICELOG - POST==>/test/login?==>request==>{"name":"2"}==>response==>password is required==>1ms
+[2019-06-01T15:45:16.164] [ERROR] SERVICELOG - POST==>/test/login?==>request==>{"name":"2"}==>response==>password is required==>3ms
+[2019-06-01T15:52:53.854] [ERROR] SERVICELOG - POST==>/admin/login?==>request==>{"name":"2"}==>response==>"Method Not Allowed"==>1ms
+[2019-06-01T15:52:58.198] [ERROR] SERVICELOG - GET==>/admin/login?&name=2==>request==>{"name":"2"}==>response==>n, a, m, e is required==>3ms
+[2019-06-01T15:53:02.417] [ERROR] SERVICELOG - GET==>/admin/login?&name=2==>request==>{"name":"2"}==>response==>n, a, m, e is required==>0ms
+[2019-06-01T15:53:34.012] [ERROR] SERVICELOG - POST==>/test/login?==>request==>{"name":"2"}==>response==>password is required==>0ms
+[2019-06-01T15:53:44.395] [ERROR] SERVICELOG - GET==>/test/login?&name=2&password=3==>request==>{"name":"2","password":"3"}==>response==>"Method Not Allowed"==>1ms
+[2019-06-01T15:53:51.537] [ERROR] SERVICELOG - GET==>/admin/login?&name=2&password=3==>request==>{"name":"2","password":"3"}==>response==>n, a, m, e is required==>1ms
+[2019-06-01T15:54:18.171] [ERROR] SERVICELOG - GET==>/admin/login?&name=2&password=3==>request==>{"name":"2","password":"3"}==>response==>n, a, m, e is required==>5ms
+[2019-06-01T15:54:33.120] [ERROR] SERVICELOG - GET==>/admin/login?&name=2&password=3==>request==>{"name":"2","password":"3"}==>response==>n, a, m, e is required==>3ms
+[2019-06-01T15:54:56.381] [ERROR] SERVICELOG - GET==>/admin/login?&name=2&password=3==>request==>{"name":"2","password":"3"}==>response==>n, a, m, e is required==>8ms
+[2019-06-01T15:55:15.622] [ERROR] SERVICELOG - GET==>/admin/login?&name=2&password=3==>request==>{"name":"2","password":"3"}==>response==>n, a, m, e is required==>3ms
+[2019-06-01T15:55:16.782] [ERROR] SERVICELOG - GET==>/admin/login?&name=2&password=3==>request==>{"name":"2","password":"3"}==>response==>n, a, m, e is required==>1ms
+[2019-06-01T15:55:22.475] [ERROR] SERVICELOG - GET==>/admin/login?&name=2&password=3==>request==>{"name":"2","password":"3"}==>response==>n, a, m, e is required==>1ms
+[2019-06-01T15:58:33.778] [ERROR] SERVICELOG - GET==>/admin/login?&name=2&password=3==>request==>{"name":"2","password":"3"}==>response==>av is not defined==>3ms
+[2019-06-01T15:58:49.635] [ERROR] SERVICELOG - GET==>/admin/login?&name=2&password=3==>request==>{"name":"2","password":"3"}==>response==>av is not defined==>2ms
+[2019-06-01T16:00:52.522] [ERROR] SERVICELOG - GET==>/admin/login?&name=2&password=3==>request==>{"name":"2","password":"3"}==>response==>av is not defined==>3ms
+[2019-06-01T16:00:53.577] [ERROR] SERVICELOG - GET==>/admin/login?&name=2&password=3==>request==>{"name":"2","password":"3"}==>response==>av is not defined==>1ms
+[2019-06-01T16:00:57.374] [ERROR] SERVICELOG - POST==>/admin/login?==>request==>{"name":"2","password":"3"}==>response==>"Method Not Allowed"==>0ms
+[2019-06-01T16:01:00.601] [ERROR] SERVICELOG - GET==>/admin/login?&name=2&password=3==>request==>{"name":"2","password":"3"}==>response==>av is not defined==>0ms
+[2019-06-01T16:02:24.038] [ERROR] SERVICELOG - GET==>/admin/login?&name=2&password=3==>request==>{"name":"2","password":"3"}==>response==>av is not defined==>2ms
+[2019-06-01T16:02:25.026] [ERROR] SERVICELOG - GET==>/admin/login?&name=2&password=3==>request==>{"name":"2","password":"3"}==>response==>av is not defined==>1ms
+[2019-06-01T16:03:15.011] [ERROR] SERVICELOG - GET==>/admin/login?&name=2&password=3==>request==>{"name":"2","password":"3"}==>response==>n, a, m, e is required==>5ms
+[2019-06-01T16:06:09.473] [ERROR] SERVICELOG - GET==>/admin/login?&password=3==>request==>{"password":"3"}==>response==>name is required==>2ms
+[2019-06-01T16:09:20.417] [ERROR] SERVICELOG - GET==>/admin/login?&password=3==>request==>{"password":"3"}==>response==>name is required==>5ms

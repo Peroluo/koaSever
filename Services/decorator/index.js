@@ -2,6 +2,7 @@ import { resolve } from 'path'
 import KoaRouter from 'koa-router'
 import glob from 'glob'
 import R from 'ramda'
+
 const pathPrefix = Symbol('pathPrefix')
 const routeMap = []
 
@@ -33,6 +34,7 @@ export class Route {
   }
 }
 
+// 路由添加中间件
 export const convert = middleware => (target, key, descriptor) => {
   target[key] = R.compose(
     R.concat(changeToArr(middleware)),
@@ -60,25 +62,14 @@ export const Put = setRouter('put')
 
 export const Delete = setRouter('delete')
 
-/**
- * @Required({
- *   body: ['name', 'password']
- * })
- */
-export const Required = paramsObj =>
+export const Required = parmas =>
   convert(async (ctx, next) => {
-    let errs = []
-
-    R.forEachObjIndexed((val, key) => {
-      errs = errs.concat(R.filter(name => !R.has(name, ctx.request[key]))(val))
-    })(paramsObj)
-
+    const requestKey = ctx.method === 'GET' ? 'query' : 'body'
+    let errs = [].concat(
+      R.filter(name => !R.has(name, ctx.request[requestKey]))(parmas)
+    )
     if (!R.isEmpty(errs)) {
-      return (ctx.body = {
-        success: false,
-        errCode: 412,
-        errMsg: `${R.join(', ', errs)} is required`
-      })
+      throw new Error(`${R.join(', ', errs)} is required`)
     }
     await next()
   })

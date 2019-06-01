@@ -1,5 +1,5 @@
 import log4js from 'log4js'
-import Help from '../help'
+import Help from './Help'
 class Log {
   /**
    * 日志生成工具

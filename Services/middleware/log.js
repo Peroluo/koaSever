@@ -1,5 +1,5 @@
-import Log from '../utils/log'
-import Help from '../utils/help'
+import Log from '../utils/Log'
+import Help from '../utils/Help'
 export const log = app => {
   app.use(async (ctx, next) => {
     const startTime = new Date().getTime()
