@@ -36,3 +36,4 @@
 [2019-06-01T12:17:10.780] [ERROR] SERVICELOG - GET==>/admin/login==>request==>{}==>response==>Cannot read property 'user' of undefined==>1ms
 [2019-06-01T12:21:45.619] [ERROR] SERVICELOG - GET==>/minad/login==>request==>{}==>response==>"Not Found"==>0ms
 [2019-06-01T12:21:48.343] [ERROR] SERVICELOG - GET==>/admin/login==>request==>{}==>response==>Cannot read property 'user' of undefined==>0ms
+[2019-06-01T14:06:40.030] [ERROR] SERVICELOG - GET==>/admin/login==>request==>{}==>response==>Cannot read property 'user' of undefined==>10ms
