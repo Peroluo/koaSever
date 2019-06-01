@@ -2,7 +2,6 @@ import { resolve } from 'path'
 import KoaRouter from 'koa-router'
 import glob from 'glob'
 import R from 'ramda'
-import logger from '../utils/log'
 const pathPrefix = Symbol('pathPrefix')
 const routeMap = []
 
@@ -42,17 +41,16 @@ export const convert = middleware => (target, key, descriptor) => {
   return descriptor
 }
 
-export const setRouter = method => path => (target, key, descriptor) => {
+export const setRouter = method => (target, key, descriptor) => {
   routeMap.push({
     target,
     method,
-    path,
+    path: `/${descriptor.value.name}`,
     callback: changeToArr(target[key])
   })
   return descriptor
 }
-export const Controller = path => target =>
-  (target.prototype[pathPrefix] = path)
+export const Controller = target => (target.prototype[pathPrefix] = target.name)
 
 export const Get = setRouter('get')
 
@@ -61,24 +59,6 @@ export const Post = setRouter('post')
 export const Put = setRouter('put')
 
 export const Delete = setRouter('delete')
-
-// export const Log = convert(async (ctx, next) => {
-//   const startTime = new Date().getTime()
-//   try {
-//     await next()
-//     const endTime = new Date().getTime()
-//     if (ctx.method === 'GET') {
-//       const info = `${ctx.method} ==> ${ctx.url} ==> 返回数据: ${JSON.stringify(
-//         ctx.body
-//       )} ==> 耗时：${Math.round(endTime - startTime) + 'ms'}`
-//       logger.info(info)
-//     }
-//   } catch (e) {
-//     const error = `${ctx.method} ==> ${ctx.url} ==> 错误信息:${e.message}`
-//     logger.error(error)
-//     ctx.body = e.message
-//   }
-// })
 
 /**
  * @Required({

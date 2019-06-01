@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node bin/www",
-    "dev": "cross-env NODE_ENV=development nodemon node bin/www",
-    "build": "cross-env NODE_ENV=production node bin/www",
+    "start": "node Services/start.js",
+    "dev": "cross-env NODE_ENV=development nodemon node Services/start.js",
+    "build": "cross-env NODE_ENV=production node Services/start.js",
     "docker:build": "docker build -t hub.docker.ipin.com/front/koasever:$npm_package_version .",
     "docker:push": "docker push hub.docker.ipin.com/front/koasever:$npm_package_version"
   },

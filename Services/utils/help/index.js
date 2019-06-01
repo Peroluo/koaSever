@@ -1,6 +1,6 @@
 class Help {
   // 生成当前时间的YY-MM-DD的时间格式
-  newDateYYMMDD() {
+  static newDateYYMMDD() {
     const date = new Date()
     const year = date.getFullYear()
     const month = date.getMonth() + 1
@@ -12,7 +12,7 @@ class Help {
       .join('-')
   }
   // 获取url的请求参数
-  getRequestParmas(url) {
+  static getRequestParmas(url) {
     const theRequest = new Object()
     if (url.indexOf('?') != -1) {
       const reqStr = url.split('?')[1].split('&')

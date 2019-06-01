@@ -1,3 +1,48 @@
-[2019-05-31T14:36:29.032] [ERROR] koaseverlog - POST==>/admin/login?==>request==>{"a":"323","dd":"23"}==>response==>服务出错了！==>3ms
-[2019-05-31T14:36:36.283] [ERROR] koaseverlog - GET==>/admin/login?&a=323&dd=23==>request==>{"a":"323","dd":"23"}==>response==>"Method Not Allowed"==>1ms
-[2019-05-31T14:36:48.471] [INFO] koaseverlog - GET==>/test/login?a=2&d=3&c=3==>request==>{"a":"2","d":"3","c":"3"}==>response==>"2"==>0ms
+[2019-06-01T10:54:48.064] [INFO] SERVICELOG - GET==>/test/login==>request==>{}==>response==>"2"==>3ms
+[2019-06-01T10:54:48.980] [ERROR] SERVICELOG - GET==>/favicon.ico==>request==>{}==>response==>"Not Found"==>1ms
+[2019-06-01T10:59:29.696] [INFO] SERVICELOG - GET==>/test/login==>request==>{}==>response==>"2"==>2ms
+[2019-06-01T10:59:49.330] [INFO] SERVICELOG - GET==>/test/login==>request==>{}==>response==>"2"==>3ms
+[2019-06-01T11:03:58.741] [ERROR] SERVICELOG - GET==>/admin/login==>request==>{}==>response==>"Method Not Allowed"==>2ms
+[2019-06-01T11:04:07.170] [ERROR] SERVICELOG - GET==>/admin/login==>request==>{}==>response==>服务出错了！==>2ms
+[2019-06-01T11:13:36.266] [ERROR] SERVICELOG - GET==>/admin/login==>request==>{}==>response==>服务出错了！==>2ms
+[2019-06-01T11:13:36.998] [ERROR] SERVICELOG - GET==>/admin/login==>request==>{}==>response==>服务出错了！==>1ms
+[2019-06-01T11:13:38.480] [ERROR] SERVICELOG - GET==>/test/login==>request==>{}==>response==>"Not Found"==>0ms
+[2019-06-01T11:14:09.517] [INFO] SERVICELOG - GET==>/test/login==>request==>{}==>response==>"2"==>2ms
+[2019-06-01T11:16:19.915] [INFO] SERVICELOG - GET==>/test/login==>request==>{}==>response==>"2"==>3ms
+[2019-06-01T11:16:30.769] [INFO] SERVICELOG - GET==>/test/login==>request==>{}==>response==>"2"==>2ms
+[2019-06-01T11:17:24.552] [ERROR] SERVICELOG - GET==>/test/login==>request==>{}==>response==>"Not Found"==>1ms
+[2019-06-01T11:17:42.858] [ERROR] SERVICELOG - GET==>/test/login==>request==>{}==>response==>"Not Found"==>0ms
+[2019-06-01T11:17:43.766] [ERROR] SERVICELOG - GET==>/test/login==>request==>{}==>response==>"Not Found"==>0ms
+[2019-06-01T11:17:45.047] [ERROR] SERVICELOG - GET==>/test/login==>request==>{}==>response==>"Not Found"==>0ms
+[2019-06-01T11:17:47.074] [ERROR] SERVICELOG - GET==>/test/login==>request==>{}==>response==>"Not Found"==>0ms
+[2019-06-01T11:17:58.027] [ERROR] SERVICELOG - GET==>/admin/login==>request==>{}==>response==>"Not Found"==>0ms
+[2019-06-01T11:18:21.447] [ERROR] SERVICELOG - GET==>/admin/login==>request==>{}==>response==>"Not Found"==>1ms
+[2019-06-01T11:18:22.318] [ERROR] SERVICELOG - GET==>/admin/login==>request==>{}==>response==>"Not Found"==>0ms
+[2019-06-01T11:18:31.247] [ERROR] SERVICELOG - GET==>/admin/login==>request==>{}==>response==>"Not Found"==>3ms
+[2019-06-01T11:19:01.143] [ERROR] SERVICELOG - GET==>/admin/login==>request==>{}==>response==>"Not Found"==>2ms
+[2019-06-01T11:19:35.501] [ERROR] SERVICELOG - GET==>/admin/login==>request==>{}==>response==>"Not Found"==>1ms
+[2019-06-01T11:19:36.091] [ERROR] SERVICELOG - GET==>/admin/login==>request==>{}==>response==>"Not Found"==>0ms
+[2019-06-01T11:19:41.734] [ERROR] SERVICELOG - GET==>/admin/login==>request==>{}==>response==>"Not Found"==>1ms
+[2019-06-01T11:19:43.669] [ERROR] SERVICELOG - GET==>/admin/login==>request==>{}==>response==>"Not Found"==>0ms
+[2019-06-01T11:19:44.162] [ERROR] SERVICELOG - GET==>/admin/login==>request==>{}==>response==>"Not Found"==>0ms
+[2019-06-01T11:19:44.420] [ERROR] SERVICELOG - GET==>/admin/login==>request==>{}==>response==>"Not Found"==>0ms
+[2019-06-01T11:19:44.651] [ERROR] SERVICELOG - GET==>/admin/login==>request==>{}==>response==>"Not Found"==>0ms
+[2019-06-01T11:19:44.859] [ERROR] SERVICELOG - GET==>/admin/login==>request==>{}==>response==>"Not Found"==>0ms
+[2019-06-01T11:19:45.037] [ERROR] SERVICELOG - GET==>/admin/login==>request==>{}==>response==>"Not Found"==>0ms
+[2019-06-01T11:19:45.235] [ERROR] SERVICELOG - GET==>/admin/login==>request==>{}==>response==>"Not Found"==>0ms
+[2019-06-01T11:19:48.494] [ERROR] SERVICELOG - GET==>/test/login==>request==>{}==>response==>"Not Found"==>0ms
+[2019-06-01T11:20:22.538] [INFO] SERVICELOG - GET==>/test/login==>request==>{}==>response==>"2"==>1ms
+[2019-06-01T11:21:01.866] [ERROR] SERVICELOG - GET==>/admin/login==>request==>{}==>response==>"Not Found"==>0ms
+[2019-06-01T11:21:12.486] [ERROR] SERVICELOG - GET==>/admin/login==>request==>{}==>response==>服务出错了！==>2ms
+[2019-06-01T11:21:13.090] [ERROR] SERVICELOG - GET==>/admin/login==>request==>{}==>response==>服务出错了！==>0ms
+[2019-06-01T11:21:29.341] [ERROR] SERVICELOG - GET==>/admin/login==>request==>{}==>response==>服务出错了！==>2ms
+[2019-06-01T11:21:29.882] [ERROR] SERVICELOG - GET==>/admin/login==>request==>{}==>response==>服务出错了！==>2ms
+[2019-06-01T11:22:00.678] [ERROR] SERVICELOG - GET==>/admin/login==>request==>{}==>response==>服务出错了！==>0ms
+[2019-06-01T11:22:02.753] [INFO] SERVICELOG - GET==>/test/login==>request==>{}==>response==>"2"==>0ms
+[2019-06-01T11:25:47.639] [INFO] SERVICELOG - GET==>/test/login==>request==>{}==>response==>"2"==>2ms
+[2019-06-01T11:25:50.082] [ERROR] SERVICELOG - GET==>/admin/login==>request==>{}==>response==>Cannot read property 'user' of undefined==>1ms
+[2019-06-01T12:17:10.157] [ERROR] SERVICELOG - GET==>/admin/login==>request==>{}==>response==>Cannot read property 'user' of undefined==>1ms
+[2019-06-01T12:17:10.781] [ERROR] SERVICELOG - GET==>/admin/login==>request==>{}==>response==>Cannot read property 'user' of undefined==>1ms
+[2019-06-01T12:17:12.987] [INFO] SERVICELOG - GET==>/test/login==>request==>{}==>response==>"2"==>0ms
+[2019-06-01T12:21:45.620] [ERROR] SERVICELOG - GET==>/minad/login==>request==>{}==>response==>"Not Found"==>0ms
+[2019-06-01T12:21:48.345] [ERROR] SERVICELOG - GET==>/admin/login==>request==>{}==>response==>Cannot read property 'user' of undefined==>0ms
