@@ -1,6 +1,6 @@
-import Log from '../utils/Log'
-import Help from '../utils/Help'
-export const log = app => {
+import Log from '../../utils/Log'
+import Help from '../../utils/Help'
+export const addLog = app => {
   app.use(async (ctx, next) => {
     const startTime = new Date().getTime()
     const reqMethod = ctx.method

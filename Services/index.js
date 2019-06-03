@@ -5,12 +5,12 @@ import R from 'ramda'
 import { join } from 'path'
 global.config = config
 
-// 中间件的执行顺序
+// 全局中间件的执行顺序
 const middlewares = ['bodyParser', 'log', 'router']
 
 const useMiddlewares = app => {
   const joinPathName = moduleName =>
-    join(__dirname, `./middleware/${moduleName}`)
+    join(__dirname, `./middleware/global/${moduleName}`)
 
   const requirePath = pathName => require(pathName)
 

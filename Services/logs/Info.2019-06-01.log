@@ -50,3 +50,41 @@
 [2019-06-01T16:06:05.265] [INFO] SERVICELOG - GET==>/admin/login?name=2&password=3==>request==>{"name":"2","password":"3"}==>response==>{"a":1,"b":2}==>0ms
 [2019-06-01T16:09:28.875] [INFO] SERVICELOG - GET==>/admin/login?&password=3&name=2323==>request==>{"password":"3","name":"2323"}==>response==>{"a":1,"b":2}==>0ms
 [2019-06-01T16:16:31.074] [INFO] SERVICELOG - GET==>/admin/login?&password=3&name=2323==>request==>{"password":"3","name":"2323"}==>response==>{"a":1,"b":2}==>3ms
+[2019-06-01T16:25:24.724] [INFO] SERVICELOG - GET==>/admin/getUserInfo==>request==>{}==>response==>{"a":1,"b":2}==>13ms
+[2019-06-01T17:06:20.982] [INFO] SERVICELOG - GET==>/admin/getUserInfo==>request==>{}==>response==>{"a":1,"b":2}==>6ms
+[2019-06-01T17:06:22.084] [INFO] SERVICELOG - GET==>/admin/getUserInfo==>request==>{}==>response==>{"a":1,"b":2}==>0ms
+[2019-06-01T17:09:15.606] [INFO] SERVICELOG - GET==>/admin/getUserInfo==>request==>{}==>response==>{"a":1,"b":2}==>2ms
+[2019-06-01T17:09:16.287] [INFO] SERVICELOG - GET==>/admin/getUserInfo==>request==>{}==>response==>{"a":1,"b":2}==>0ms
+[2019-06-01T17:16:53.318] [INFO] SERVICELOG - GET==>/admin/getUserInfo==>request==>{}==>response==>{"a":1,"b":2}==>7ms
+[2019-06-01T17:16:54.892] [INFO] SERVICELOG - GET==>/admin/getUserInfo==>request==>{}==>response==>{"a":1,"b":2}==>1ms
+[2019-06-01T17:17:06.545] [INFO] SERVICELOG - GET==>/admin/getUserInfo==>request==>{}==>response==>{"success":false,"errCode":402,"errMsg":"name, password is required"}==>2ms
+[2019-06-01T17:17:08.044] [INFO] SERVICELOG - GET==>/admin/getUserInfo==>request==>{}==>response==>{"success":false,"errCode":402,"errMsg":"name, password is required"}==>0ms
+[2019-06-01T17:17:15.681] [INFO] SERVICELOG - GET==>/admin/getUserInfo?name=2==>request==>{"name":"2"}==>response==>{"success":false,"errCode":402,"errMsg":"password is required"}==>0ms
+[2019-06-01T17:24:52.413] [INFO] SERVICELOG - GET==>/admin/getUserInfo?name=2==>request==>{"name":"2"}==>response==>{"success":false,"errCode":402,"errMsg":"password is required"}==>6ms
+[2019-06-01T17:24:53.121] [INFO] SERVICELOG - GET==>/admin/getUserInfo?name=2==>request==>{"name":"2"}==>response==>{"success":false,"errCode":402,"errMsg":"password is required"}==>0ms
+[2019-06-01T17:24:53.636] [INFO] SERVICELOG - GET==>/admin/getUserInfo?name=2==>request==>{"name":"2"}==>response==>{"success":false,"errCode":402,"errMsg":"password is required"}==>0ms
+[2019-06-01T17:24:54.045] [INFO] SERVICELOG - GET==>/admin/getUserInfo?name=2==>request==>{"name":"2"}==>response==>{"success":false,"errCode":402,"errMsg":"password is required"}==>0ms
+[2019-06-01T17:24:54.432] [INFO] SERVICELOG - GET==>/admin/getUserInfo?name=2==>request==>{"name":"2"}==>response==>{"success":false,"errCode":402,"errMsg":"password is required"}==>0ms
+[2019-06-01T17:49:24.125] [INFO] SERVICELOG - GET==>/admin/getUserInfo?name=2==>request==>{"name":"2"}==>response==>{"success":false,"errCode":402,"errMsg":"password is required"}==>9ms
+[2019-06-01T17:54:44.127] [INFO] SERVICELOG - GET==>/admin/getUserInfo?name=2==>request==>{"name":"2"}==>response==>{"success":false,"errCode":402,"errMsg":"password is required"}==>6ms
+[2019-06-01T17:54:44.874] [INFO] SERVICELOG - GET==>/admin/getUserInfo?name=2==>request==>{"name":"2"}==>response==>{"success":false,"errCode":402,"errMsg":"password is required"}==>0ms
+[2019-06-01T17:58:43.803] [INFO] SERVICELOG - GET==>/admin/getUserInfo?name=2==>request==>{"name":"2"}==>response==>{"success":false,"errCode":402,"errMsg":"password is required"}==>2ms
+[2019-06-01T18:00:09.183] [INFO] SERVICELOG - GET==>/admin/getUserInfo?name=2==>request==>{"name":"2"}==>response==>{"success":false,"errCode":402,"errMsg":"password is required"}==>3ms
+[2019-06-01T18:00:47.147] [INFO] SERVICELOG - GET==>/admin/getUserInfo?name=2==>request==>{"name":"2"}==>response==>{"success":false,"errCode":402,"errMsg":"password is required"}==>3ms
+[2019-06-01T18:00:47.981] [INFO] SERVICELOG - GET==>/admin/getUserInfo?name=2==>request==>{"name":"2"}==>response==>{"success":false,"errCode":402,"errMsg":"password is required"}==>0ms
+[2019-06-01T18:01:11.658] [INFO] SERVICELOG - GET==>/admin/getUserInfo?name=2==>request==>{"name":"2"}==>response==>{"success":false,"errCode":402,"errMsg":"password is required"}==>3ms
+[2019-06-01T18:03:33.689] [INFO] SERVICELOG - GET==>/admin/getUserInfo?name=2==>request==>{"name":"2"}==>response==>{"success":false,"errCode":402,"errMsg":"password is required"}==>7ms
+[2019-06-01T18:03:34.568] [INFO] SERVICELOG - GET==>/admin/getUserInfo?name=2==>request==>{"name":"2"}==>response==>{"success":false,"errCode":402,"errMsg":"password is required"}==>1ms
+[2019-06-01T18:06:59.745] [INFO] SERVICELOG - GET==>/admin/getUserInfo?name=2==>request==>{"name":"2"}==>response==>{"success":false,"errCode":402,"errMsg":"password is required"}==>10ms
+[2019-06-01T18:12:31.303] [INFO] SERVICELOG - GET==>/admin/getUserInfo?name=2==>request==>{"name":"2"}==>response==>{"success":false,"errCode":402,"errMsg":"password is required"}==>2ms
+[2019-06-01T18:12:32.405] [INFO] SERVICELOG - GET==>/admin/getUserInfo?name=2==>request==>{"name":"2"}==>response==>{"success":false,"errCode":402,"errMsg":"password is required"}==>1ms
+[2019-06-01T18:12:33.205] [INFO] SERVICELOG - GET==>/admin/getUserInfo?name=2==>request==>{"name":"2"}==>response==>{"success":false,"errCode":402,"errMsg":"password is required"}==>1ms
+[2019-06-01T18:12:33.834] [INFO] SERVICELOG - GET==>/admin/getUserInfo?name=2==>request==>{"name":"2"}==>response==>{"success":false,"errCode":402,"errMsg":"password is required"}==>0ms
+[2019-06-01T18:26:46.887] [INFO] SERVICELOG - GET==>/admin/getUserInfo?name=2==>request==>{"name":"2"}==>response==>{"success":false,"errCode":402,"errMsg":"password is required"}==>3ms
+[2019-06-01T18:30:16.149] [INFO] SERVICELOG - GET==>/admin/getUserInfo?name=2==>request==>{"name":"2"}==>response==>{"success":false,"errCode":402,"errMsg":"password is required"}==>4ms
+[2019-06-01T18:30:16.795] [INFO] SERVICELOG - GET==>/admin/getUserInfo?name=2==>request==>{"name":"2"}==>response==>{"success":false,"errCode":402,"errMsg":"password is required"}==>1ms
+[2019-06-01T19:00:33.388] [INFO] SERVICELOG - GET==>/admin/getUserInfo?name=2==>request==>{"name":"2"}==>response==>{"success":false,"errCode":402,"errMsg":"password is required"}==>3ms
+[2019-06-01T19:02:44.077] [INFO] SERVICELOG - GET==>/admin/getUserInfo?name=2==>request==>{"name":"2"}==>response==>{"success":false,"errCode":10002,"errMsg":"password is required"}==>10ms
+[2019-06-01T19:02:45.731] [INFO] SERVICELOG - GET==>/admin/getUserInfo?name=2==>request==>{"name":"2"}==>response==>{"success":false,"errCode":10002,"errMsg":"password is required"}==>0ms
+[2019-06-01T19:02:52.671] [INFO] SERVICELOG - GET==>/admin/getUserInfo?name=2==>request==>{"name":"2"}==>response==>{"success":false,"errCode":1002,"errMsg":"password is required"}==>3ms
+[2019-06-01T19:02:53.480] [INFO] SERVICELOG - GET==>/admin/getUserInfo?name=2==>request==>{"name":"2"}==>response==>{"success":false,"errCode":1002,"errMsg":"password is required"}==>1ms

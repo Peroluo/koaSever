@@ -73,3 +73,14 @@
 [2019-06-01T16:03:15.011] [ERROR] SERVICELOG - GET==>/admin/login?&name=2&password=3==>request==>{"name":"2","password":"3"}==>response==>n, a, m, e is required==>5ms
 [2019-06-01T16:06:09.473] [ERROR] SERVICELOG - GET==>/admin/login?&password=3==>request==>{"password":"3"}==>response==>name is required==>2ms
 [2019-06-01T16:09:20.417] [ERROR] SERVICELOG - GET==>/admin/login?&password=3==>request==>{"password":"3"}==>response==>name is required==>5ms
+[2019-06-01T17:28:11.422] [ERROR] SERVICELOG - GET==>/admin/getUserInfo?name=2==>request==>{"name":"2"}==>response==>Cannot read property 'user' of undefined==>3ms
+[2019-06-01T17:28:12.895] [ERROR] SERVICELOG - GET==>/admin/getUserInfo?name=2==>request==>{"name":"2"}==>response==>Cannot read property 'user' of undefined==>0ms
+[2019-06-01T17:29:00.373] [ERROR] SERVICELOG - GET==>/admin/getUserInfo?name=2==>request==>{"name":"2"}==>response==>Cannot read property 'user' of undefined==>2ms
+[2019-06-01T17:29:01.107] [ERROR] SERVICELOG - GET==>/admin/getUserInfo?name=2==>request==>{"name":"2"}==>response==>Cannot read property 'user' of undefined==>0ms
+[2019-06-01T17:32:04.932] [ERROR] SERVICELOG - GET==>/admin/getUserInfo?name=2==>request==>{"name":"2"}==>response==>Cannot read property 'user' of undefined==>3ms
+[2019-06-01T17:35:04.480] [ERROR] SERVICELOG - GET==>/admin/getUserInfo?name=2==>request==>{"name":"2"}==>response==>Cannot read property 'user' of undefined==>2ms
+[2019-06-01T17:49:14.252] [ERROR] SERVICELOG - GET==>/admin/getUserInfo?name=2==>request==>{"name":"2"}==>response==>Cannot read property 'user' of undefined==>2ms
+[2019-06-01T17:58:36.989] [ERROR] SERVICELOG - GET==>/admin/getUserInfo?name=2==>request==>{"name":"2"}==>response==>Cannot read property 'user' of undefined==>3ms
+[2019-06-01T18:00:01.545] [ERROR] SERVICELOG - GET==>/admin/getUserInfo?name=2==>request==>{"name":"2"}==>response==>Cannot read property 'user' of undefined==>6ms
+[2019-06-01T18:15:41.984] [ERROR] SERVICELOG - GET==>/admin/getUserInfo?name=2==>request==>{"name":"2"}==>response==>"Not Found"==>0ms
+[2019-06-01T18:15:42.827] [ERROR] SERVICELOG - GET==>/admin/getUserInfo?name=2==>request==>{"name":"2"}==>response==>"Not Found"==>0ms

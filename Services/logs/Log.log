@@ -125,3 +125,52 @@
 [2019-06-01T16:09:20.421] [ERROR] SERVICELOG - GET==>/admin/login?&password=3==>request==>{"password":"3"}==>response==>name is required==>5ms
 [2019-06-01T16:09:28.877] [INFO] SERVICELOG - GET==>/admin/login?&password=3&name=2323==>request==>{"password":"3","name":"2323"}==>response==>{"a":1,"b":2}==>0ms
 [2019-06-01T16:16:31.077] [INFO] SERVICELOG - GET==>/admin/login?&password=3&name=2323==>request==>{"password":"3","name":"2323"}==>response==>{"a":1,"b":2}==>3ms
+[2019-06-01T16:25:24.729] [INFO] SERVICELOG - GET==>/admin/getUserInfo==>request==>{}==>response==>{"a":1,"b":2}==>13ms
+[2019-06-01T17:06:20.985] [INFO] SERVICELOG - GET==>/admin/getUserInfo==>request==>{}==>response==>{"a":1,"b":2}==>6ms
+[2019-06-01T17:06:22.086] [INFO] SERVICELOG - GET==>/admin/getUserInfo==>request==>{}==>response==>{"a":1,"b":2}==>0ms
+[2019-06-01T17:09:15.607] [INFO] SERVICELOG - GET==>/admin/getUserInfo==>request==>{}==>response==>{"a":1,"b":2}==>2ms
+[2019-06-01T17:09:16.290] [INFO] SERVICELOG - GET==>/admin/getUserInfo==>request==>{}==>response==>{"a":1,"b":2}==>0ms
+[2019-06-01T17:16:53.324] [INFO] SERVICELOG - GET==>/admin/getUserInfo==>request==>{}==>response==>{"a":1,"b":2}==>7ms
+[2019-06-01T17:16:54.893] [INFO] SERVICELOG - GET==>/admin/getUserInfo==>request==>{}==>response==>{"a":1,"b":2}==>1ms
+[2019-06-01T17:17:06.547] [INFO] SERVICELOG - GET==>/admin/getUserInfo==>request==>{}==>response==>{"success":false,"errCode":402,"errMsg":"name, password is required"}==>2ms
+[2019-06-01T17:17:08.045] [INFO] SERVICELOG - GET==>/admin/getUserInfo==>request==>{}==>response==>{"success":false,"errCode":402,"errMsg":"name, password is required"}==>0ms
+[2019-06-01T17:17:15.681] [INFO] SERVICELOG - GET==>/admin/getUserInfo?name=2==>request==>{"name":"2"}==>response==>{"success":false,"errCode":402,"errMsg":"password is required"}==>0ms
+[2019-06-01T17:24:52.415] [INFO] SERVICELOG - GET==>/admin/getUserInfo?name=2==>request==>{"name":"2"}==>response==>{"success":false,"errCode":402,"errMsg":"password is required"}==>6ms
+[2019-06-01T17:24:53.123] [INFO] SERVICELOG - GET==>/admin/getUserInfo?name=2==>request==>{"name":"2"}==>response==>{"success":false,"errCode":402,"errMsg":"password is required"}==>0ms
+[2019-06-01T17:24:53.637] [INFO] SERVICELOG - GET==>/admin/getUserInfo?name=2==>request==>{"name":"2"}==>response==>{"success":false,"errCode":402,"errMsg":"password is required"}==>0ms
+[2019-06-01T17:24:54.046] [INFO] SERVICELOG - GET==>/admin/getUserInfo?name=2==>request==>{"name":"2"}==>response==>{"success":false,"errCode":402,"errMsg":"password is required"}==>0ms
+[2019-06-01T17:24:54.433] [INFO] SERVICELOG - GET==>/admin/getUserInfo?name=2==>request==>{"name":"2"}==>response==>{"success":false,"errCode":402,"errMsg":"password is required"}==>0ms
+[2019-06-01T17:28:11.431] [ERROR] SERVICELOG - GET==>/admin/getUserInfo?name=2==>request==>{"name":"2"}==>response==>Cannot read property 'user' of undefined==>3ms
+[2019-06-01T17:28:12.897] [ERROR] SERVICELOG - GET==>/admin/getUserInfo?name=2==>request==>{"name":"2"}==>response==>Cannot read property 'user' of undefined==>0ms
+[2019-06-01T17:29:00.379] [ERROR] SERVICELOG - GET==>/admin/getUserInfo?name=2==>request==>{"name":"2"}==>response==>Cannot read property 'user' of undefined==>2ms
+[2019-06-01T17:29:01.108] [ERROR] SERVICELOG - GET==>/admin/getUserInfo?name=2==>request==>{"name":"2"}==>response==>Cannot read property 'user' of undefined==>0ms
+[2019-06-01T17:32:04.934] [ERROR] SERVICELOG - GET==>/admin/getUserInfo?name=2==>request==>{"name":"2"}==>response==>Cannot read property 'user' of undefined==>3ms
+[2019-06-01T17:35:04.482] [ERROR] SERVICELOG - GET==>/admin/getUserInfo?name=2==>request==>{"name":"2"}==>response==>Cannot read property 'user' of undefined==>2ms
+[2019-06-01T17:49:14.254] [ERROR] SERVICELOG - GET==>/admin/getUserInfo?name=2==>request==>{"name":"2"}==>response==>Cannot read property 'user' of undefined==>2ms
+[2019-06-01T17:49:24.128] [INFO] SERVICELOG - GET==>/admin/getUserInfo?name=2==>request==>{"name":"2"}==>response==>{"success":false,"errCode":402,"errMsg":"password is required"}==>9ms
+[2019-06-01T17:54:44.129] [INFO] SERVICELOG - GET==>/admin/getUserInfo?name=2==>request==>{"name":"2"}==>response==>{"success":false,"errCode":402,"errMsg":"password is required"}==>6ms
+[2019-06-01T17:54:44.876] [INFO] SERVICELOG - GET==>/admin/getUserInfo?name=2==>request==>{"name":"2"}==>response==>{"success":false,"errCode":402,"errMsg":"password is required"}==>0ms
+[2019-06-01T17:58:36.997] [ERROR] SERVICELOG - GET==>/admin/getUserInfo?name=2==>request==>{"name":"2"}==>response==>Cannot read property 'user' of undefined==>3ms
+[2019-06-01T17:58:43.805] [INFO] SERVICELOG - GET==>/admin/getUserInfo?name=2==>request==>{"name":"2"}==>response==>{"success":false,"errCode":402,"errMsg":"password is required"}==>2ms
+[2019-06-01T18:00:01.553] [ERROR] SERVICELOG - GET==>/admin/getUserInfo?name=2==>request==>{"name":"2"}==>response==>Cannot read property 'user' of undefined==>6ms
+[2019-06-01T18:00:09.185] [INFO] SERVICELOG - GET==>/admin/getUserInfo?name=2==>request==>{"name":"2"}==>response==>{"success":false,"errCode":402,"errMsg":"password is required"}==>3ms
+[2019-06-01T18:00:47.149] [INFO] SERVICELOG - GET==>/admin/getUserInfo?name=2==>request==>{"name":"2"}==>response==>{"success":false,"errCode":402,"errMsg":"password is required"}==>3ms
+[2019-06-01T18:00:47.982] [INFO] SERVICELOG - GET==>/admin/getUserInfo?name=2==>request==>{"name":"2"}==>response==>{"success":false,"errCode":402,"errMsg":"password is required"}==>0ms
+[2019-06-01T18:01:11.660] [INFO] SERVICELOG - GET==>/admin/getUserInfo?name=2==>request==>{"name":"2"}==>response==>{"success":false,"errCode":402,"errMsg":"password is required"}==>3ms
+[2019-06-01T18:03:33.693] [INFO] SERVICELOG - GET==>/admin/getUserInfo?name=2==>request==>{"name":"2"}==>response==>{"success":false,"errCode":402,"errMsg":"password is required"}==>7ms
+[2019-06-01T18:03:34.570] [INFO] SERVICELOG - GET==>/admin/getUserInfo?name=2==>request==>{"name":"2"}==>response==>{"success":false,"errCode":402,"errMsg":"password is required"}==>1ms
+[2019-06-01T18:06:59.747] [INFO] SERVICELOG - GET==>/admin/getUserInfo?name=2==>request==>{"name":"2"}==>response==>{"success":false,"errCode":402,"errMsg":"password is required"}==>10ms
+[2019-06-01T18:12:31.305] [INFO] SERVICELOG - GET==>/admin/getUserInfo?name=2==>request==>{"name":"2"}==>response==>{"success":false,"errCode":402,"errMsg":"password is required"}==>2ms
+[2019-06-01T18:12:32.407] [INFO] SERVICELOG - GET==>/admin/getUserInfo?name=2==>request==>{"name":"2"}==>response==>{"success":false,"errCode":402,"errMsg":"password is required"}==>1ms
+[2019-06-01T18:12:33.206] [INFO] SERVICELOG - GET==>/admin/getUserInfo?name=2==>request==>{"name":"2"}==>response==>{"success":false,"errCode":402,"errMsg":"password is required"}==>1ms
+[2019-06-01T18:12:33.835] [INFO] SERVICELOG - GET==>/admin/getUserInfo?name=2==>request==>{"name":"2"}==>response==>{"success":false,"errCode":402,"errMsg":"password is required"}==>0ms
+[2019-06-01T18:15:41.986] [ERROR] SERVICELOG - GET==>/admin/getUserInfo?name=2==>request==>{"name":"2"}==>response==>"Not Found"==>0ms
+[2019-06-01T18:15:42.828] [ERROR] SERVICELOG - GET==>/admin/getUserInfo?name=2==>request==>{"name":"2"}==>response==>"Not Found"==>0ms
+[2019-06-01T18:26:46.890] [INFO] SERVICELOG - GET==>/admin/getUserInfo?name=2==>request==>{"name":"2"}==>response==>{"success":false,"errCode":402,"errMsg":"password is required"}==>3ms
+[2019-06-01T18:30:16.151] [INFO] SERVICELOG - GET==>/admin/getUserInfo?name=2==>request==>{"name":"2"}==>response==>{"success":false,"errCode":402,"errMsg":"password is required"}==>4ms
+[2019-06-01T18:30:16.796] [INFO] SERVICELOG - GET==>/admin/getUserInfo?name=2==>request==>{"name":"2"}==>response==>{"success":false,"errCode":402,"errMsg":"password is required"}==>1ms
+[2019-06-01T19:00:33.390] [INFO] SERVICELOG - GET==>/admin/getUserInfo?name=2==>request==>{"name":"2"}==>response==>{"success":false,"errCode":402,"errMsg":"password is required"}==>3ms
+[2019-06-01T19:02:44.079] [INFO] SERVICELOG - GET==>/admin/getUserInfo?name=2==>request==>{"name":"2"}==>response==>{"success":false,"errCode":10002,"errMsg":"password is required"}==>10ms
+[2019-06-01T19:02:45.732] [INFO] SERVICELOG - GET==>/admin/getUserInfo?name=2==>request==>{"name":"2"}==>response==>{"success":false,"errCode":10002,"errMsg":"password is required"}==>0ms
+[2019-06-01T19:02:52.674] [INFO] SERVICELOG - GET==>/admin/getUserInfo?name=2==>request==>{"name":"2"}==>response==>{"success":false,"errCode":1002,"errMsg":"password is required"}==>3ms
+[2019-06-01T19:02:53.482] [INFO] SERVICELOG - GET==>/admin/getUserInfo?name=2==>request==>{"name":"2"}==>response==>{"success":false,"errCode":1002,"errMsg":"password is required"}==>1ms

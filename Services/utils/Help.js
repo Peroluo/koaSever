@@ -1,3 +1,5 @@
+import R from 'ramda'
+const changeToArr = R.unless(R.is(Array), R.of)
 class Help {
   // 生成当前时间的YY-MM-DD的时间格式
   static newDateYYMMDD() {
@@ -21,6 +23,20 @@ class Help {
       }
     }
     return theRequest
+  }
+
+  /**
+   *  中间封装成装饰器
+   * @param {中间间} middleware
+   */
+  static convert(middleware) {
+    return (target, key, descriptor) => {
+      target[key] = R.compose(
+        R.concat(changeToArr(middleware)),
+        changeToArr
+      )(target[key])
+      return descriptor
+    }
   }
 }
 export default Help

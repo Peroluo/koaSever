@@ -21,9 +21,7 @@ export class Route {
 
   init = () => {
     const { app, router, routesPath } = this
-
     glob.sync(resolve(routesPath, './*.js')).forEach(require)
-
     R.forEach(({ target, method, path, callback }) => {
       const prefix = resolvePath(target[pathPrefix])
       router[method](prefix + path, ...callback)
@@ -32,15 +30,6 @@ export class Route {
     app.use(router.routes())
     app.use(router.allowedMethods())
   }
-}
-
-// 路由添加中间件
-export const convert = middleware => (target, key, descriptor) => {
-  target[key] = R.compose(
-    R.concat(changeToArr(middleware)),
-    changeToArr
-  )(target[key])
-  return descriptor
 }
 
 export const setRouter = method => (target, key, descriptor) => {
@@ -61,26 +50,3 @@ export const Post = setRouter('post')
 export const Put = setRouter('put')
 
 export const Delete = setRouter('delete')
-
-export const Required = parmas =>
-  convert(async (ctx, next) => {
-    const requestKey = ctx.method === 'GET' ? 'query' : 'body'
-    let errs = [].concat(
-      R.filter(name => !R.has(name, ctx.request[requestKey]))(parmas)
-    )
-    if (!R.isEmpty(errs)) {
-      throw new Error(`${R.join(', ', errs)} is required`)
-    }
-    await next()
-  })
-
-export const Auth = convert(async (ctx, next) => {
-  if (!ctx.session.user) {
-    return (ctx.body = {
-      success: false,
-      errCode: 401,
-      errMsg: '登陆信息已失效, 请重新登陆'
-    })
-  }
-  await next()
-})
