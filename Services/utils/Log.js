@@ -26,7 +26,6 @@ class Log {
   }
 
   /**
-   * 生成错误日志
    * @param {error日志信息} errorMsg
    */
   static error(errorMsg) {
@@ -35,7 +34,6 @@ class Log {
   }
 
   /**
-   * 生成错误日信息
    * @param {Info日志信息} infoMsg
    */
   static info(infoMsg) {
