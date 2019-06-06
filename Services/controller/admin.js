@@ -2,7 +2,7 @@ import { Controller, RequestMapping } from '../decorator'
 import middleware from '../decorator/middleware'
 const { Required, Auth } = middleware
 @Controller
-export default class Admin {
+class Admin {
   @RequestMapping('get', 'id')
   @Required(['name', 'password'])
   getUserInfo(ctx) {
@@ -11,3 +11,4 @@ export default class Admin {
     ctx.body = { a: 1, b: 2 }
   }
 }
+export default Admin
