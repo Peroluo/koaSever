@@ -3,12 +3,13 @@ import middleware from '../decorator/middleware'
 const { Required, Auth } = middleware
 @Controller
 class Admin {
-  @RequestMapping('get', 'id')
-  @Required(['name', 'password'])
+  @RequestMapping('get')
   getUserInfo(ctx) {
     console.log(ctx.params)
-    // throw new Error('服务出错了！')
+
     ctx.body = { a: 1, b: 2 }
+
+    ctx.redirect('/')
   }
 }
 export default Admin

@@ -14,3 +14,13 @@
 [2019-06-06T12:19:00.830] [ERROR] SERVICELOG - GET==>/admin/getUserInfo/2==>request==>{}==>response==>"Not Found"==>1ms
 [2019-06-06T12:19:03.053] [INFO] SERVICELOG - GET==>/admin/getUserInfo/==>request==>{}==>response==>{"a":1,"b":2}==>2ms
 [2019-06-06T12:24:42.547] [INFO] SERVICELOG - GET==>/admin/getUserInfo/3?name=2&password=3==>request==>{"name":"2","password":"3"}==>response==>{"a":1,"b":2}==>5ms
+[2019-06-06T23:11:18.186] [ERROR] SERVICELOG - GET==>/test/login==>request==>{}==>response==>"Not Found"==>2ms
+[2019-06-06T23:11:28.914] [ERROR] SERVICELOG - GET==>/admin/login==>request==>{}==>response==>"Not Found"==>1ms
+[2019-06-06T23:11:29.184] [ERROR] SERVICELOG - GET==>/favicon.ico==>request==>{}==>response==>"Not Found"==>0ms
+[2019-06-06T23:11:32.169] [ERROR] SERVICELOG - GET==>/admin/login==>request==>{}==>response==>"Not Found"==>1ms
+[2019-06-06T23:11:40.255] [ERROR] SERVICELOG - GET==>/admin/getUserInfo==>request==>{}==>response==>"Found"==>26ms
+[2019-06-06T23:11:40.273] [ERROR] SERVICELOG - GET==>/==>request==>{}==>response==>"Not Found"==>0ms
+[2019-06-06T23:12:16.964] [ERROR] SERVICELOG - GET==>/admin/getUserInfo==>request==>{}==>response==>"Found"==>3ms
+[2019-06-06T23:12:16.975] [ERROR] SERVICELOG - GET==>/==>request==>{}==>response==>"Not Found"==>0ms
+[2019-06-06T23:14:35.056] [ERROR] SERVICELOG - GET==>/admin/getUserInfo==>request==>{}==>response==>"Found"==>9ms
+[2019-06-06T23:14:35.072] [ERROR] SERVICELOG - GET==>/==>request==>{}==>response==>"Not Found"==>1ms
