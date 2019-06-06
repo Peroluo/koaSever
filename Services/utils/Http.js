@@ -1,12 +1,17 @@
-const request = require('request-promise')
-
+import axios from 'axios'
 // 从其他服务获取数据
-class Server {
+class Http {
   /**
    * 初始化Sever相关属性
    * @param timeout 请求过期时间
    */
-  constructor(timeout) {
+  constructor({ timeout = 10000, baseURL = '' }) {
+    this.Server = axios.create({
+      baseURL,
+      timeout,
+      withCredentials: true,
+      httpsAgent: new https.Agent({ keepAlive: true })
+    })
     this.TIMEOUT = timeout || 10000
   }
 
