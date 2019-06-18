@@ -29,15 +29,15 @@ export class Route {
   }
 }
 
-export const RequestMapping = (method = 'GET', params = null) => (
+export const RequestMapping = (requestmapping = { method: 'get', url: '' }) => (
   target,
   key,
   descriptor
 ) => {
   routeMap.push({
     target,
-    method,
-    path: `/${descriptor.value.name}${params ? `/:parmas` : ''}`,
+    method: requestmapping.method,
+    path: requestmapping.url ? requestmapping.url : `/${descriptor.value.name}`,
     callback: changeToArr(target[key])
   })
   return descriptor

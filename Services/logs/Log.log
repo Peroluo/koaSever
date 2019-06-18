@@ -1,26 +1,36 @@
-[2019-06-06T12:14:18.096] [ERROR] SERVICELOG - GET==>/test/login==>request==>{}==>response==>"Not Found"==>2ms
-[2019-06-06T12:14:19.878] [ERROR] SERVICELOG - GET==>/admin/login==>request==>{}==>response==>"Not Found"==>0ms
-[2019-06-06T12:14:20.064] [ERROR] SERVICELOG - GET==>/favicon.ico==>request==>{}==>response==>"Not Found"==>0ms
-[2019-06-06T12:14:28.110] [INFO] SERVICELOG - GET==>/admin/getUserInfo==>request==>{}==>response==>{"success":false,"errCode":1002,"errMsg":"name, password is required"}==>3ms
-[2019-06-06T12:15:38.673] [ERROR] SERVICELOG - GET==>/admin/getUserInfo==>request==>{}==>response==>"Not Found"==>1ms
-[2019-06-06T12:15:39.547] [ERROR] SERVICELOG - GET==>/admin/getUserInfo==>request==>{}==>response==>"Not Found"==>1ms
-[2019-06-06T12:15:42.287] [INFO] SERVICELOG - GET==>/admin/getUserInfo/2==>request==>{}==>response==>{"success":false,"errCode":1002,"errMsg":"name, password is required"}==>2ms
-[2019-06-06T12:16:12.887] [INFO] SERVICELOG - GET==>/admin/getUserInfo/2==>request==>{}==>response==>{"a":1,"b":2}==>6ms
-[2019-06-06T12:16:28.103] [INFO] SERVICELOG - GET==>/admin/getUserInfo/2==>request==>{}==>response==>{"a":1,"b":2}==>4ms
-[2019-06-06T12:17:05.190] [INFO] SERVICELOG - GET==>/admin/getUserInfo/2==>request==>{}==>response==>{"a":1,"b":2}==>3ms
-[2019-06-06T12:18:44.029] [INFO] SERVICELOG - GET==>/admin/getUserInfo/2==>request==>{}==>response==>{"a":1,"b":2}==>5ms
-[2019-06-06T12:18:47.443] [ERROR] SERVICELOG - GET==>/admin/getUserInfo/==>request==>{}==>response==>"Not Found"==>1ms
-[2019-06-06T12:18:50.119] [INFO] SERVICELOG - GET==>/admin/getUserInfo/2==>request==>{}==>response==>{"a":1,"b":2}==>1ms
-[2019-06-06T12:19:00.830] [ERROR] SERVICELOG - GET==>/admin/getUserInfo/2==>request==>{}==>response==>"Not Found"==>1ms
-[2019-06-06T12:19:03.053] [INFO] SERVICELOG - GET==>/admin/getUserInfo/==>request==>{}==>response==>{"a":1,"b":2}==>2ms
-[2019-06-06T12:24:42.547] [INFO] SERVICELOG - GET==>/admin/getUserInfo/3?name=2&password=3==>request==>{"name":"2","password":"3"}==>response==>{"a":1,"b":2}==>5ms
-[2019-06-06T23:11:18.186] [ERROR] SERVICELOG - GET==>/test/login==>request==>{}==>response==>"Not Found"==>2ms
-[2019-06-06T23:11:28.914] [ERROR] SERVICELOG - GET==>/admin/login==>request==>{}==>response==>"Not Found"==>1ms
-[2019-06-06T23:11:29.184] [ERROR] SERVICELOG - GET==>/favicon.ico==>request==>{}==>response==>"Not Found"==>0ms
-[2019-06-06T23:11:32.169] [ERROR] SERVICELOG - GET==>/admin/login==>request==>{}==>response==>"Not Found"==>1ms
-[2019-06-06T23:11:40.255] [ERROR] SERVICELOG - GET==>/admin/getUserInfo==>request==>{}==>response==>"Found"==>26ms
-[2019-06-06T23:11:40.273] [ERROR] SERVICELOG - GET==>/==>request==>{}==>response==>"Not Found"==>0ms
-[2019-06-06T23:12:16.964] [ERROR] SERVICELOG - GET==>/admin/getUserInfo==>request==>{}==>response==>"Found"==>3ms
-[2019-06-06T23:12:16.975] [ERROR] SERVICELOG - GET==>/==>request==>{}==>response==>"Not Found"==>0ms
-[2019-06-06T23:14:35.056] [ERROR] SERVICELOG - GET==>/admin/getUserInfo==>request==>{}==>response==>"Found"==>9ms
-[2019-06-06T23:14:35.072] [ERROR] SERVICELOG - GET==>/==>request==>{}==>response==>"Not Found"==>1ms
+[2019-06-18T21:43:44.847] [ERROR] SERVICELOG - GET==>/test/login==>request==>{}==>response==>"Not Found"==>1ms
+[2019-06-18T21:43:45.004] [ERROR] SERVICELOG - GET==>/favicon.ico==>request==>{}==>response==>"Not Found"==>0ms
+[2019-06-18T21:43:48.861] [ERROR] SERVICELOG - GET==>/admin/login==>request==>{}==>response==>"Not Found"==>0ms
+[2019-06-18T21:43:50.323] [ERROR] SERVICELOG - GET==>/admin/login==>request==>{}==>response==>"Not Found"==>0ms
+[2019-06-18T21:43:58.873] [ERROR] SERVICELOG - GET==>/admin/getUserInfo==>request==>{}==>response==>"Found"==>19ms
+[2019-06-18T21:43:58.882] [ERROR] SERVICELOG - GET==>/==>request==>{}==>response==>"Not Found"==>1ms
+[2019-06-18T21:44:18.908] [ERROR] SERVICELOG - GET==>/admin/getUserInfo/2==>request==>{}==>response==>"Not Found"==>0ms
+[2019-06-18T21:44:23.913] [ERROR] SERVICELOG - GET==>/admin/getUserInfo==>request==>{}==>response==>"Found"==>1ms
+[2019-06-18T21:44:23.919] [ERROR] SERVICELOG - GET==>/==>request==>{}==>response==>"Not Found"==>0ms
+[2019-06-18T21:44:52.784] [INFO] SERVICELOG - GET==>/admin/getUserInfo==>request==>{}==>response==>{"a":1,"b":2}==>3ms
+[2019-06-18T21:54:35.685] [INFO] SERVICELOG - GET==>/admin/getUserInfo==>request==>{}==>response==>{"a":1,"b":2}==>3ms
+[2019-06-18T21:54:37.785] [INFO] SERVICELOG - GET==>/admin/getUserInfo==>request==>{}==>response==>{"a":1,"b":2}==>1ms
+[2019-06-18T21:54:49.802] [ERROR] SERVICELOG - GET==>/admin/getUserInfo==>request==>{}==>response==>"Not Found"==>3ms
+[2019-06-18T21:54:52.211] [INFO] SERVICELOG - GET==>/admin/test==>request==>{}==>response==>{"a":1,"b":2}==>2ms
+[2019-06-18T21:55:00.759] [INFO] SERVICELOG - GET==>/admin/test/2==>request==>{}==>response==>{"a":1,"b":2}==>4ms
+[2019-06-18T21:55:04.011] [ERROR] SERVICELOG - GET==>/admin/test==>request==>{}==>response==>"Not Found"==>0ms
+[2019-06-18T21:56:03.143] [ERROR] SERVICELOG - GET==>/admin/test==>request==>{}==>response==>"Not Found"==>0ms
+[2019-06-18T21:56:07.291] [ERROR] SERVICELOG - GET==>/admin/getUserInfo==>request==>{}==>response==>"Not Found"==>0ms
+[2019-06-18T21:56:16.118] [INFO] SERVICELOG - GET==>/admin/test/2==>request==>{}==>response==>{"a":1,"b":2}==>1ms
+[2019-06-18T21:56:28.308] [INFO] SERVICELOG - GET==>/admin/test/2==>request==>{}==>response==>{"a":1,"b":2}==>3ms
+[2019-06-18T21:57:40.764] [INFO] SERVICELOG - GET==>/admin/test/2==>request==>{}==>response==>{"a":1,"b":2}==>4ms
+[2019-06-18T21:58:57.015] [INFO] SERVICELOG - GET==>/admin/test/2==>request==>{}==>response==>{"a":1,"b":2}==>3ms
+[2019-06-18T21:59:53.167] [ERROR] SERVICELOG - GET==>/admin/test/2==>request==>{}==>response==>Cannot read property 'user' of undefined==>1ms
+[2019-06-18T21:59:55.010] [ERROR] SERVICELOG - GET==>/admin/test/2==>request==>{}==>response==>Cannot read property 'user' of undefined==>0ms
+[2019-06-18T21:59:56.393] [ERROR] SERVICELOG - GET==>/admin/test/2==>request==>{}==>response==>Cannot read property 'user' of undefined==>1ms
+[2019-06-18T22:00:02.836] [INFO] SERVICELOG - GET==>/admin/test/2==>request==>{}==>response==>{"a":1,"b":2}==>5ms
+[2019-06-18T22:01:21.555] [INFO] SERVICELOG - GET==>/admin/test/2==>request==>{}==>response==>{"a":1,"b":2}==>2ms
+[2019-06-18T22:01:22.683] [INFO] SERVICELOG - GET==>/admin/test/2==>request==>{}==>response==>{"a":1,"b":2}==>1ms
+[2019-06-18T22:01:23.520] [INFO] SERVICELOG - GET==>/admin/test/2==>request==>{}==>response==>{"a":1,"b":2}==>1ms
+[2019-06-18T22:01:24.322] [INFO] SERVICELOG - GET==>/admin/test/2==>request==>{}==>response==>{"a":1,"b":2}==>1ms
+[2019-06-18T22:01:25.262] [INFO] SERVICELOG - GET==>/admin/test/2==>request==>{}==>response==>{"a":1,"b":2}==>3ms
+[2019-06-18T22:01:25.975] [INFO] SERVICELOG - GET==>/admin/test/2==>request==>{}==>response==>{"a":1,"b":2}==>1ms
+[2019-06-18T22:01:31.920] [INFO] SERVICELOG - GET==>/admin/test/2==>request==>{}==>response==>{"a":1,"b":2}==>1ms
+[2019-06-18T22:03:02.010] [INFO] SERVICELOG - GET==>/admin/test/2==>request==>{}==>response==>{"success":false,"errCode":1002,"errMsg":"NAME is required"}==>8ms
+[2019-06-18T22:03:48.802] [INFO] SERVICELOG - GET==>/admin/test/2?NAME=2==>request==>{"NAME":"2"}==>response==>{"a":1,"b":2}==>2ms
+[2019-06-18T22:03:53.078] [INFO] SERVICELOG - GET==>/admin/test/2?name=2==>request==>{"name":"2"}==>response==>{"success":false,"errCode":1002,"errMsg":"NAME is required"}==>0ms
