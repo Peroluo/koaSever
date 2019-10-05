@@ -7,6 +7,7 @@ class Admin {
   @RequestMapping({ method: 'get', url: '/test/:id' })
   // url非必填,不填则是/getUserInfo
   async getUserInfo(ctx) {
+    debugger
     const data = await http.httpRequest(
       'http://202.96.155.121:8888/api/auth/loginByMobile',
       {

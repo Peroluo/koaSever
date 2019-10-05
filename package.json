@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node --inspect Services/start.js",
     "dev": "cross-env NODE_ENV=development nodemon node Services/start.js",
+    "debug": "node --inspect Services/start.js",
     "build": "cross-env NODE_ENV=production node Services/start.js",
     "docker:build": "docker build -t hub.docker.ipin.com/front/koasever:$npm_package_version .",
     "docker:push": "docker push hub.docker.ipin.com/front/koasever:$npm_package_version"
